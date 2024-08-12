@@ -7,13 +7,14 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 '''
 class Solution:
-    def convertTemperature(self, celsius: float):
-      li=[]
-      kelvin=celsius+273.15
-      fahrenheit=celsius*1.80+32.00
-      li.append(kelvin)
-      li.append(fahrenheit)
-      return li
+    def smallestEvenMultiple(self, n: int):
+        
+        if  n %2 ==0:
+            return n
+        else:
+            
+         return n*2
+
 ss=Solution()
-s=ss.convertTemperature(36.50)
+s=ss.smallestEvenMultiple(5)
 print(s)
